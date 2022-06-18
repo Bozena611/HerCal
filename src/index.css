@@ -12,6 +12,18 @@ code {
     monospace;
 }
 
+a {
+  color:  black;
+}
+a:link {
+  text-decoration: none;
+  color:  black;
+}
+
+a:active {
+  color: black;
+}
+
 /* ====== NAVBAR ====== */
 .navbar-links {
     display: flex;
@@ -110,8 +122,87 @@ abbr[title] {
 
 .herstory-main-div {
   text-align: center;
+  display:  flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
 }
 
+.monthsList {
+  margin: 1em;
+  padding: 0.7em;
+  border:  1px solid yellow;
+  background-color: yellow;
+}
+
+.categoriesList {
+  margin:  1em;
+}
+
+.herstory-data-list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-column-gap: 1em;
+  padding: 5%;
+}
+.herstory-card-container {
+  border:  1px solid grey;
+  padding: 0.5em;
+}
+.herstory-article {
+  position:  relative;
+  overflow:  hidden;
+}
+.herstory-nace, .herstory-fallece, .herstory-fecha-separate {
+  margin:  0;
+}
+.herstory-nace, .herstory-fallece {
+  color:  white;
+  font-weight: 600;
+  font-size: 18px;
+}
+.herstory-fecha-separate {
+  color: yellow;
+  font-size: 30px;
+}
+.herstory-img {
+  object-fit: cover;
+  width: 100%;
+  height: 100%;
+}
+.herstory-fecha-div {
+  position: absolute;
+  top: 1em;
+  left: 1em;
+  right: 0;
+  height: fit-content;
+  margin: auto;
+}
+
+.herstory-img-bio {
+  position: absolute;
+  bottom: 1em;
+  left: 1em;
+  right: 0;
+  height: fit-content;
+  margin: auto;
+}
+.herstory-heighlight-yellow {
+  background-color: yellow;
+}
+.herstory-heighlight-white {
+  background-color: white;
+}
+.herstory-card-category-div {
+   margin-top: 0.5em;
+}
+
+.herstory-card-category {
+  padding: 0.5em;
+  border:  1px solid yellow;
+  background-color: yellow;
+}
 /* ========== MOBILE RESPONSIVE ======= */
 
 @media only screen and (max-width: 767px) {

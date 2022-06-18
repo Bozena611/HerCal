@@ -21,10 +21,10 @@ const HerCal = () => {
 			  	value={date}
 			  	locale="es-ES"
 			  />
-				</div>
-				<div className="data-container">
-					 Eventos para: {date.toLocaleDateString('es-ES', options )}
-				</div>
+			</div>
+			<div className="data-container">
+				 Eventos para: {date.toLocaleDateString('es-ES', options )}
+			</div>
       <WomenList
         month1={month1}
         day1={day1}

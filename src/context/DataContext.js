@@ -4,8 +4,9 @@ import Papa from "papaparse";
 const DataContext = createContext({});
 
 export const DataProvider =  ({ children })  => {
-	const [women, setWomen] = useState();
-/*const [name, setName] = useState("Peter Pan")*/
+  const [women, setWomen] = useState();
+
+  /*const [name, setName] = useState("Peter Pan")*/
   /*const [date, setDate] = useState(new Date());
 
    const date1 = date;
@@ -20,15 +21,16 @@ export const DataProvider =  ({ children })  => {
       complete: (results) => {
       setWomen(results.data);
     },
-   })
+    })
   },[])
 
   console.log("DATA", women)
-return (
-        <DataContext.Provider value={women}>
-            {children}
-        </DataContext.Provider>
-    );
+
+  return (
+    <DataContext.Provider value={women}>
+        {children}
+    </DataContext.Provider>
+  );
 };
 
 
