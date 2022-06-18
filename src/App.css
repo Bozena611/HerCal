@@ -1,0 +1,9 @@
+.App {
+  text-align: center;
+}
+
+.react-calendar__navigation {
+  margin-top: 2em !important;
+  margin-bottom: 2em !important;
+  text-align: center;
+}
