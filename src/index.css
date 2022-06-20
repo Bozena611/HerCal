@@ -146,6 +146,7 @@ abbr[title] {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   grid-column-gap: 1em;
+  grid-row-gap: 1em;
   padding: 5%;
 }
 .herstory-card-container {
@@ -210,5 +211,10 @@ abbr[title] {
 @media only screen and (max-width: 767px) {
   .card-img {
     width:  30%;
+  }
+  .herstory-data-list {
+    grid-template-columns: 1fr;
+    grid-row-gap: 1em;
+   padding: 5%;
   }
 }
