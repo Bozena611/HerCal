@@ -21,7 +21,7 @@ const WomenList = ({day1, month1}) => {
 		          <div className="card-container">
 		            <img src={item.Imagen} className="card-img" alt={item.Nombre} />
 		            <div>
-				         <p> {item.Nombre} - Nace: {item.Nace}</p>
+				         <p> {item.Nombre} - Nace: {item.Nace} / Fallece: {item.Fallece}</p>
 		             <p>{item.BioCorta}</p>
 				        </div>
 		          </div>

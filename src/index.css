@@ -134,10 +134,12 @@ abbr[title] {
   padding: 0.7em;
   border:  1px solid yellow;
   background-color: yellow;
+  cursor: pointer;
 }
 
 .categoriesList {
   margin:  1em;
+  cursor: pointer;
 }
 
 .herstory-data-list {
