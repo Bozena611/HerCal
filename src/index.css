@@ -1,16 +1,21 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+ /* font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
-    sans-serif;
+    sans-serif;*/
+    font-family: 'Helvetica';
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
-code {
+/*code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
+}*/
+html {
+  font-family: 'Helvetica';
 }
+
 
 a {
   color:  black;
@@ -38,6 +43,9 @@ a:active {
 
 /* =======  CALENDAR NAVIGATION PART ========== */
 
+.react-calendar, .react-calendar__viewContainer button {
+  font-family: 'Helvetica' !important;
+}
 .react-calendar__navigation {
   margin-top: 2em;
   margin-bottom: 2em;
@@ -53,9 +61,18 @@ a:active {
   display: none;
 }
 .react-calendar__navigation__prev-button, .react-calendar__navigation__next-button {
-  border: 1px solid #eaeaea !important;
+  /*border: 1px solid #eaeaea !important;*/
   padding: 0.5em 1em;
-  font-size: 16px;
+  font-size: 24px;
+  position: absolute;
+  top: 35%;
+  font-family: 'Helvetica';
+}
+.react-calendar__navigation__prev-button {
+  left: 6%;
+}
+.react-calendar__navigation__next-button {
+  right: 6%;
 }
 
 .react-calendar__navigation__label {
@@ -74,6 +91,7 @@ a:active {
 
 abbr[title] {
   text-decoration: none;
+  text-transform: capitalize;
 }
 
 .react-calendar__month-view__weekdays__weekday {
@@ -81,20 +99,29 @@ abbr[title] {
 }
 
 .react-calendar__month-view__weekdays {
-  border: 1px solid #eaeaea !important;
-  background-color: yellow;
+ /* border: 1px solid #eaeaea !important;
+  background-color: yellow;*/
 }
 
 .react-calendar__month-view__days button {
-  border: 1px solid #eaeaea !important;
+ /* border: 1px solid #eaeaea !important;*/
+  border: none;
   background-color: transparent;
-  padding: 1.5em;
+  padding: 0.5em;
+  font-size: 28px;
 }
 
-/* ============ SHOW DATA ========== */
+/* ========================= SHOW DATA ===================== */
 
-.data-container {
+.date-container {
   margin-left: 10%;
+  margin-right:  10%;
+  background-color: yellow;
+  text-align: center;
+  padding-top: 1em;
+  padding-bottom: 1em;
+  font-size: 28px;
+
 }
 .data-list {
   margin: 3em;
@@ -102,20 +129,32 @@ abbr[title] {
   padding-left: 0;
 }
 
-/* ======= SINGLE CARD ====== */
+/* ======================== SINGLE CARD ===================== */
 
 .card-container {
   display:  flex;
   margin-top: 1em;
   margin-bottom: 1em;
-  background-color: lightgrey;
+  /*background-color: lightgrey;*/
   padding:  1em;
 }
-
 .card-img {
   height: auto;
   width:  10%;
-  margin-right: 2em;
+  margin-right: 1em;
+}
+.card-details {
+  padding-top: 0.5em;
+}
+.card-name {
+  text-transform: uppercase;
+}
+.card-yellow-title {
+  background-color: yellow;
+  padding: 0.5em;
+}
+.bio-corta {
+  padding-left: 0.5em;
 }
 
 /*==== HERSTORY PAGE====== */

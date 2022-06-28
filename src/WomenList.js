@@ -19,11 +19,11 @@ const WomenList = ({day1, month1}) => {
 			    	(item.MesNace == month1+1 && item.DiaNace == day1) || (item.MesF == month1+1 && item.DiaF == day1) ? (
 	         	<Link to={`/hercal/:name`} key={i.toString()} >
 		          <div className="card-container">
-		            <img src={item.Imagen} className="card-img" alt={item.Nombre} />
-		            <div>
-				         <p> {item.Nombre} - Nace: {item.Nace} / Fallece: {item.Fallece}</p>
-		             <p>{item.BioCorta}</p>
-				        </div>
+		           <img src={item.Imagen} className="card-img" alt={item.Nombre} />
+		           <div className="card-details">
+				        <span className="card-yellow-title"> <span className="card-name">{item.Nombre}</span> - <span className="nace-fallece">{item.Nace} / {item.Fallece}</span></span>
+		            <p className="bio-corta">{item.BioCorta}</p>
+				       </div>
 		          </div>
 		         </Link>
 	          )

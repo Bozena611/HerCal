@@ -7,7 +7,7 @@ const HerCal = () => {
 
   const [date, setDate] = useState(new Date());
 
-  const options = { month: 'long', day: 'numeric' };
+  const options = { month: 'numeric', day: 'numeric' };
 
   const date1 = date;
   const month1 = date1.getMonth();
@@ -22,8 +22,8 @@ const HerCal = () => {
 			  	locale="es-ES"
 			  />
 			</div>
-			<div className="data-container">
-				 Eventos para: {date.toLocaleDateString('es-ES', options )}
+			<div className="date-container">
+				 {date.toLocaleDateString('es-ES', options )}
 			</div>
       <WomenList
         month1={month1}
