@@ -233,7 +233,28 @@ abbr[title] {
 .bio-corta {
   padding-left: 0.5em;
 }
+.bottom-part {
+  text-align: center;
+  margin-top: 5em;
+}
+.suscribir {
+  background-color: yellow;
+  padding: 1em;
+  font-size: 44px;
+}
+.tienda {
+  margin-bottom: 7em;
+}
+.img-container {
+  display: flex;
+  justify-content: center;
+  margin-top:7em;
+  margin-bottom: 7em;
+}
 
+.img-container img {
+  width: 30%;
+}
 /*==== HERSTORY PAGE====== */
 
 .herstory-main-div {

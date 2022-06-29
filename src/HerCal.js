@@ -32,6 +32,16 @@ const HerCal = () => {
         month1={month1}
         day1={day1}
       />
+      <div className="bottom-part">
+        <h1><span className="suscribir">¡Quiero suscribirme!</span></h1>
+      </div>
+      <div className="img-container">
+        <img src="img1.png" alt="quote"></img>
+        <img src="img2.png" alt="herstory"></img>
+      </div>
+      <div className="bottom-part tienda">
+        <h1><span className="suscribir">Visita nuestra tienda</span></h1>
+      </div>
     </div>
 	);
 };
