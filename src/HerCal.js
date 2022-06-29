@@ -1,5 +1,7 @@
 import { useState } from 'react';
 import Calendar from "react-calendar";
+/*import 'react-calendar/dist/Calendar.css';*/
+
 
 import WomenList from './WomenList';
 
@@ -20,6 +22,7 @@ const HerCal = () => {
 			  	onChange={setDate}
 			  	value={date}
 			  	locale="es-ES"
+          showNeighboringMonth={false}
 			  />
 			</div>
 			<div className="date-container">

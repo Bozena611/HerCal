@@ -16,7 +16,6 @@ html {
   font-family: 'Helvetica';
 }
 
-
 a {
   color:  black;
 }
@@ -28,11 +27,54 @@ a:link {
 a:active {
   color: black;
 }
+/* ===================== TEST ====================== */
+.react-calendar__tile:disabled {
+  background-color: #f0f0f0;
+}
+.react-calendar__tile:enabled:hover,
+.react-calendar__tile:enabled:focus {
+  /*background-color: #e6e6e6;*/
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 10px;
+}
+.react-calendar__tile--now {
+  background: #ffff76;
+}
+.react-calendar__tile--now:enabled:hover,
+.react-calendar__tile--now:enabled:focus {
+  background: #ffffa9;
+}
+.react-calendar__tile--hasActive {
+  background: #76baff;
+}
+.react-calendar__tile--hasActive:enabled:hover,
+.react-calendar__tile--hasActive:enabled:focus {
+  background: #a9d4ff;
+}
+.react-calendar__tile--active {
+  /*background: #006edc;*/
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 10px;
+}
+.react-calendar__tile--active:enabled:hover,
+.react-calendar__tile--active:enabled:focus {
+ /* background: #1087ff;*/
+}
+.react-calendar--selectRange .react-calendar__tile--hover {
+  /*background-color: #e6e6e6;*/
+  text-decoration: underline;
+  text-decoration-color: yellow;
+  text-decoration-thickness: 10px;
+}
+
+/* ============ TEST ================0 */
 
 /* ====== NAVBAR ====== */
 .navbar-links {
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     list-style-type: none;
   }
 
@@ -40,8 +82,37 @@ a:active {
   text-decoration: none;
   color: black;
 }
+.title {
+  font-size: 42px;
+  font-weight: 400px;
+  margin-top: 0;
+  margin-bottom: 0;
 
-/* =======  CALENDAR NAVIGATION PART ========== */
+}
+.title-text {
+  font-size: 24px;
+  margin-top: 0.5em;
+  margin-bottom: 0.5em;
+  background-color: yellow;
+}
+
+.nav-right-side {
+  display:  flex;
+  justify-content: flex-end;
+  align-items: center;
+}
+.nav-right-side li {
+  margin-right: 1em;
+}
+.nav-right-side li a {
+  font-size: 24px;
+}
+.dona-btn {
+  padding: 1em;
+  margin-right: 1em;
+  background-color: yellow;
+}
+/* =======================  CALENDAR NAVIGATION PART ===================== */
 
 .react-calendar, .react-calendar__viewContainer button {
   font-family: 'Helvetica' !important;
@@ -56,16 +127,16 @@ a:active {
   background-color: transparent;
   border: none;
 }
-
 .react-calendar__navigation__prev2-button, .react-calendar__navigation__next2-button {
   display: none;
 }
 .react-calendar__navigation__prev-button, .react-calendar__navigation__next-button {
   /*border: 1px solid #eaeaea !important;*/
+  cursor: pointer;
   padding: 0.5em 1em;
-  font-size: 24px;
+  font-size: 72px;
   position: absolute;
-  top: 35%;
+  top: 45%;
   font-family: 'Helvetica';
 }
 .react-calendar__navigation__prev-button {
@@ -80,7 +151,11 @@ a:active {
   margin-right: 3em;
 }
 .react-calendar__navigation__label__labelText {
-  text-transform: uppercase;
+  font-size: 42px;
+  text-transform: capitalize;
+}
+.react-calendar__tile--active {
+  background-color: #006edc;
 }
 
 /* ============= MAIN CALENDAR ========== */
@@ -90,6 +165,7 @@ a:active {
 }
 
 abbr[title] {
+  font-size: 22px;
   text-decoration: none;
   text-transform: capitalize;
 }
@@ -105,10 +181,11 @@ abbr[title] {
 
 .react-calendar__month-view__days button {
  /* border: 1px solid #eaeaea !important;*/
+  cursor: pointer;
   border: none;
   background-color: transparent;
   padding: 0.5em;
-  font-size: 28px;
+  font-size: 48px;
 }
 
 /* ========================= SHOW DATA ===================== */
@@ -118,9 +195,9 @@ abbr[title] {
   margin-right:  10%;
   background-color: yellow;
   text-align: center;
-  padding-top: 1em;
-  padding-bottom: 1em;
-  font-size: 28px;
+  padding-top: 0.5em;
+  padding-bottom: 0.5em;
+  font-size: 48px;
 
 }
 .data-list {
